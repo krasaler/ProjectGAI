@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GAIDataSet" targetNamespace="http://tempuri.org/GAIDataSet.xsd" xmlns:mstns="http://tempuri.org/GAIDataSet.xsd" xmlns="http://tempuri.org/GAIDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GAIConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GAIConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProjectGAI.Properties.Settings.GlobalReference.Default.GAIConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CaroOwnersTableAdapter" GeneratorDataComponentClassName="CaroOwnersTableAdapter" Name="CaroOwners" UserDataComponentName="CaroOwnersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GAIConnectionString (Settings)" DbObjectName="GAI.dbo.CaroOwners" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Model, BodyType, Produser, Data, NumberBody, NumberEngine, NumberChassis, Name, LastName, MiddleName, Adres FROM dbo.CaroOwners</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Model" DataSetColumn="Model" />
+              <Mapping SourceColumn="BodyType" DataSetColumn="BodyType" />
+              <Mapping SourceColumn="Produser" DataSetColumn="Produser" />
+              <Mapping SourceColumn="Data" DataSetColumn="Data" />
+              <Mapping SourceColumn="NumberBody" DataSetColumn="NumberBody" />
+              <Mapping SourceColumn="NumberEngine" DataSetColumn="NumberEngine" />
+              <Mapping SourceColumn="NumberChassis" DataSetColumn="NumberChassis" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="MiddleName" DataSetColumn="MiddleName" />
+              <Mapping SourceColumn="Adres" DataSetColumn="Adres" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ModelTableAdapter" GeneratorDataComponentClassName="ModelTableAdapter" Name="Model" UserDataComponentName="ModelTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GAIConnectionString (Settings)" DbObjectName="GAI.dbo.Model" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Model, Produser, BodyType, BodyTypeClassification FROM dbo.Model</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Model" DataSetColumn="Model" />
+              <Mapping SourceColumn="Produser" DataSetColumn="Produser" />
+              <Mapping SourceColumn="BodyType" DataSetColumn="BodyType" />
+              <Mapping SourceColumn="BodyTypeClassification" DataSetColumn="BodyTypeClassification" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OwnerFineTableAdapter" GeneratorDataComponentClassName="OwnerFineTableAdapter" Name="OwnerFine" UserDataComponentName="OwnerFineTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GAIConnectionString (Settings)" DbObjectName="GAI.dbo.OwnerFine" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Name, LastName, MiddleName, Adres, Штраф FROM dbo.OwnerFine</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="MiddleName" DataSetColumn="MiddleName" />
+              <Mapping SourceColumn="Adres" DataSetColumn="Adres" />
+              <Mapping SourceColumn="Штраф" DataSetColumn="Штраф" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RightTableAdapter" GeneratorDataComponentClassName="RightTableAdapter" Name="Right" UserDataComponentName="RightTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GAIConnectionString (Settings)" DbObjectName="GAI.dbo.[Right]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT RightsType, Name, LastName, MiddleName, Adres FROM [Right]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RightsType" DataSetColumn="RightsType" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="MiddleName" DataSetColumn="MiddleName" />
+              <Mapping SourceColumn="Adres" DataSetColumn="Adres" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GAIDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GAIDataSet" msprop:Generator_UserDSName="GAIDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CaroOwners" msprop:Generator_TableClassName="CaroOwnersDataTable" msprop:Generator_TableVarName="tableCaroOwners" msprop:Generator_TablePropName="CaroOwners" msprop:Generator_RowDeletingName="CaroOwnersRowDeleting" msprop:Generator_RowChangingName="CaroOwnersRowChanging" msprop:Generator_RowEvHandlerName="CaroOwnersRowChangeEventHandler" msprop:Generator_RowDeletedName="CaroOwnersRowDeleted" msprop:Generator_UserTableName="CaroOwners" msprop:Generator_RowChangedName="CaroOwnersRowChanged" msprop:Generator_RowEvArgName="CaroOwnersRowChangeEvent" msprop:Generator_RowClassName="CaroOwnersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Model" msprop:Generator_ColumnVarNameInTable="columnModel" msprop:Generator_ColumnPropNameInRow="Model" msprop:Generator_ColumnPropNameInTable="ModelColumn" msprop:Generator_UserColumnName="Model">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BodyType" msprop:Generator_ColumnVarNameInTable="columnBodyType" msprop:Generator_ColumnPropNameInRow="BodyType" msprop:Generator_ColumnPropNameInTable="BodyTypeColumn" msprop:Generator_UserColumnName="BodyType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Produser" msprop:Generator_ColumnVarNameInTable="columnProduser" msprop:Generator_ColumnPropNameInRow="Produser" msprop:Generator_ColumnPropNameInTable="ProduserColumn" msprop:Generator_UserColumnName="Produser">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnPropNameInTable="DataColumn" msprop:Generator_UserColumnName="Data" type="xs:dateTime" />
+              <xs:element name="NumberBody" msprop:Generator_ColumnVarNameInTable="columnNumberBody" msprop:Generator_ColumnPropNameInRow="NumberBody" msprop:Generator_ColumnPropNameInTable="NumberBodyColumn" msprop:Generator_UserColumnName="NumberBody" type="xs:decimal" />
+              <xs:element name="NumberEngine" msprop:Generator_ColumnVarNameInTable="columnNumberEngine" msprop:Generator_ColumnPropNameInRow="NumberEngine" msprop:Generator_ColumnPropNameInTable="NumberEngineColumn" msprop:Generator_UserColumnName="NumberEngine" type="xs:decimal" />
+              <xs:element name="NumberChassis" msprop:Generator_ColumnVarNameInTable="columnNumberChassis" msprop:Generator_ColumnPropNameInRow="NumberChassis" msprop:Generator_ColumnPropNameInTable="NumberChassisColumn" msprop:Generator_UserColumnName="NumberChassis" type="xs:decimal" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MiddleName" msprop:Generator_ColumnVarNameInTable="columnMiddleName" msprop:Generator_ColumnPropNameInRow="MiddleName" msprop:Generator_ColumnPropNameInTable="MiddleNameColumn" msprop:Generator_UserColumnName="MiddleName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adres" msprop:Generator_ColumnVarNameInTable="columnAdres" msprop:Generator_ColumnPropNameInRow="Adres" msprop:Generator_ColumnPropNameInTable="AdresColumn" msprop:Generator_UserColumnName="Adres">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Model" msprop:Generator_TableClassName="ModelDataTable" msprop:Generator_TableVarName="tableModel" msprop:Generator_TablePropName="Model" msprop:Generator_RowDeletingName="ModelRowDeleting" msprop:Generator_RowChangingName="ModelRowChanging" msprop:Generator_RowEvHandlerName="ModelRowChangeEventHandler" msprop:Generator_RowDeletedName="ModelRowDeleted" msprop:Generator_UserTableName="Model" msprop:Generator_RowChangedName="ModelRowChanged" msprop:Generator_RowEvArgName="ModelRowChangeEvent" msprop:Generator_RowClassName="ModelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Model" msprop:Generator_ColumnVarNameInTable="columnModel" msprop:Generator_ColumnPropNameInRow="Model" msprop:Generator_ColumnPropNameInTable="ModelColumn" msprop:Generator_UserColumnName="Model">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Produser" msprop:Generator_ColumnVarNameInTable="columnProduser" msprop:Generator_ColumnPropNameInRow="Produser" msprop:Generator_ColumnPropNameInTable="ProduserColumn" msprop:Generator_UserColumnName="Produser">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BodyType" msprop:Generator_ColumnVarNameInTable="columnBodyType" msprop:Generator_ColumnPropNameInRow="BodyType" msprop:Generator_ColumnPropNameInTable="BodyTypeColumn" msprop:Generator_UserColumnName="BodyType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BodyTypeClassification" msprop:Generator_ColumnVarNameInTable="columnBodyTypeClassification" msprop:Generator_ColumnPropNameInRow="BodyTypeClassification" msprop:Generator_ColumnPropNameInTable="BodyTypeClassificationColumn" msprop:Generator_UserColumnName="BodyTypeClassification">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OwnerFine" msprop:Generator_TableClassName="OwnerFineDataTable" msprop:Generator_TableVarName="tableOwnerFine" msprop:Generator_TablePropName="OwnerFine" msprop:Generator_RowDeletingName="OwnerFineRowDeleting" msprop:Generator_RowChangingName="OwnerFineRowChanging" msprop:Generator_RowEvHandlerName="OwnerFineRowChangeEventHandler" msprop:Generator_RowDeletedName="OwnerFineRowDeleted" msprop:Generator_UserTableName="OwnerFine" msprop:Generator_RowChangedName="OwnerFineRowChanged" msprop:Generator_RowEvArgName="OwnerFineRowChangeEvent" msprop:Generator_RowClassName="OwnerFineRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MiddleName" msprop:Generator_ColumnVarNameInTable="columnMiddleName" msprop:Generator_ColumnPropNameInRow="MiddleName" msprop:Generator_ColumnPropNameInTable="MiddleNameColumn" msprop:Generator_UserColumnName="MiddleName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adres" msprop:Generator_ColumnVarNameInTable="columnAdres" msprop:Generator_ColumnPropNameInRow="Adres" msprop:Generator_ColumnPropNameInTable="AdresColumn" msprop:Generator_UserColumnName="Adres">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Штраф" msprop:Generator_ColumnVarNameInTable="columnШтраф" msprop:Generator_ColumnPropNameInRow="Штраф" msprop:Generator_ColumnPropNameInTable="ШтрафColumn" msprop:Generator_UserColumnName="Штраф">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Right" msprop:Generator_TableClassName="RightDataTable" msprop:Generator_TableVarName="tableRight" msprop:Generator_TablePropName="Right" msprop:Generator_RowDeletingName="RightRowDeleting" msprop:Generator_RowChangingName="RightRowChanging" msprop:Generator_RowEvHandlerName="RightRowChangeEventHandler" msprop:Generator_RowDeletedName="RightRowDeleted" msprop:Generator_UserTableName="Right" msprop:Generator_RowChangedName="RightRowChanged" msprop:Generator_RowEvArgName="RightRowChangeEvent" msprop:Generator_RowClassName="RightRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RightsType" msprop:Generator_ColumnVarNameInTable="columnRightsType" msprop:Generator_ColumnPropNameInRow="RightsType" msprop:Generator_ColumnPropNameInTable="RightsTypeColumn" msprop:Generator_UserColumnName="RightsType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MiddleName" msprop:Generator_ColumnVarNameInTable="columnMiddleName" msprop:Generator_ColumnPropNameInRow="MiddleName" msprop:Generator_ColumnPropNameInTable="MiddleNameColumn" msprop:Generator_UserColumnName="MiddleName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adres" msprop:Generator_ColumnVarNameInTable="columnAdres" msprop:Generator_ColumnPropNameInRow="Adres" msprop:Generator_ColumnPropNameInTable="AdresColumn" msprop:Generator_UserColumnName="Adres">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
